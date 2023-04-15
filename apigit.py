@@ -20,7 +20,7 @@ caminho = []
 criado = []
 atualizado = []
 descricao = []
-# print('\nSelected infordmation about each repository:')
+
 for repo_dict in repo_dicts:
 
      nome.append(repo_dict['name'])
@@ -31,7 +31,7 @@ for repo_dict in repo_dicts:
      atualizado.append(repo_dict['updated_at'])
      descricao.append(repo_dict['description'])
 
-#df = pd.DataFrame.from_dict(repo_dicts)
+#df = pd.DataFrame.from_dict(repo_dicts) alternativa para criar o dataframe
 df = pd.DataFrame({'nomes': nome, 'proprietarios': proprietario, 'estrelas':estrela, 'caminhos': caminho,
                        'criados': criado, 'atualizado': atualizado, 'descricaos':descricao})
 
